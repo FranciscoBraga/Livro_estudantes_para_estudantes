@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de Atributos HTML</title>
+</head>
+<body>
+  <h1>Atributos de Mídia</h1>
+  <h2>src</h2>
+  <!-- Define o caminho do arquivo de imagem -->
+  <img src="foto-perfil.jpg" alt="Foto de perfil"><br><br>
+  <!-- Define o caminho do arquivo de vídeo -->
+  <video src="video-aula.mp4" controls></video><br><br>
+
+  <h2>alt</h2>
+  <!-- Texto alternativo para acessibilidade -->
+  <img src="logo.png" alt="Logo da empresa Feosclab"><br><br>
+  <img src="paisagem.jpg" alt="Foto de uma montanha ao pôr do sol"><br><br>
+
+  <h2>width e height</h2>
+  <!-- Define largura e altura da imagem -->
+  <img src="imagem.jpg" width="200" height="150"><br><br>
+  <!-- Define largura e altura do vídeo -->
+  <video src="video.mp4" width="400" height="300" controls></video><br><br>
+
+  <h2>controls</h2>
+  <!-- Adiciona controles de reprodução ao áudio -->
+  <audio src="musica.mp3" controls></audio><br><br>
+  <!-- Adiciona controles de reprodução ao vídeo -->
+  <video src="trailer.mp4" controls></video><br><br>
+
+  <h2>autoplay</h2>
+  <!-- Inicia reprodução automática do vídeo -->
+  <video src="intro.mp4" autoplay muted></video><br><br>
+  <!-- Inicia reprodução automática do áudio -->
+  <audio src="som.mp3" autoplay></audio><br><br>
+
+  <h2>loop</h2>
+  <!-- Reproduz o vídeo em loop -->
+  <video src="loop-background.mp4" autoplay loop muted></video><br><br>
+  <!-- Reproduz o áudio em loop -->
+  <audio src="musica-loop.mp3" loop controls></audio><br><br>
+
+  <h2>accept</h2>
+  <!-- Aceita somente arquivos de imagem -->
+  <input type="file" accept="image/*"><br><br>
+  <!-- Aceita arquivos PDF e DOCX -->
+  <input type="file" accept=".pdf,.docx"><br><br>
+
+  <h1>Atributos de Links</h1>
+  <h2>href</h2>
+  <!-- Define o destino do link para um site externo -->
+  <a href="https://www.google.com">Ir para o Google</a><br><br>
+  <!-- Define o destino do link para uma página local -->
+  <a href="contato.html">Página de Contato</a><br><br>
+
+  <h2>target</h2>
+  <!-- Abre o link em nova aba -->
+  <a href="https://openai.com" target="_blank">Abrir OpenAI em nova aba</a><br><br>
+  <!-- Abre o link na mesma aba -->
+  <a href="portfolio.html" target="_self">Abrir portfólio na mesma aba</a><br><br>
+
+  <h2>rel</h2>
+  <!-- Especifica relação de link patrocinado -->
+  <a href="https://exemplo.com" rel="nofollow">Link patrocinado</a><br><br>
+  <!-- Especifica o relacionamento como folha de estilo -->
+  <link href="estilo.css" rel="stylesheet"><br><br>
+
+  <h1>Atributos de Formulário</h1>
+  <h2>type</h2>
+  <!-- Campo do tipo e-mail -->
+  <input type="email" placeholder="Digite seu e-mail"><br><br>
+  <!-- Campo do tipo senha -->
+  <input type="password" placeholder="Senha"><br><br>
+
+  <h2>value</h2>
+  <!-- Valor padrão do campo de texto -->
+  <input type="text" value="João"><br><br>
+  <!-- Valor associado ao botão -->
+  <button type="submit" value="enviar">Enviar</button><br><br>
+
+  <h2>id</h2>
+  <!-- Identificador único do campo -->
+  <input type="text" id="nome"><br><br>
+  <!-- Rótulo vinculado ao campo pelo ID -->
+  <label for="nome">Nome completo</label><br><br>
+
+  <h2>class</h2>
+  <!-- Aplica classes CSS ao campo -->
+  <input type="text" class="campo texto"><br><br>
+  <!-- Aplica classes CSS ao botão -->
+  <button class="botao enviar">Enviar</button><br><br>
+
+  <h2>autofocus</h2>
+  <!-- Campo recebe foco automático -->
+  <input type="text" autofocus placeholder="Digite seu nome"><br><br>
+  <!-- Área de texto com foco automático -->
+  <textarea autofocus>Digite aqui...</textarea><br><br>
+
+  <h2>placeholder</h2>
+  <!-- Texto de exemplo no campo -->
+  <input type="text" placeholder="Digite seu nome completo"><br><br>
+  <!-- Texto de exemplo na área de texto -->
+  <textarea placeholder="Deixe seu comentário"></textarea><br><br>
+
+  <h2>required</h2>
+  <!-- Campo obrigatório para preenchimento -->
+  <input type="email" required><br><br>
+  <!-- Campo de senha obrigatório -->
+  <input type="password" required><br><br>
+
+  <h2>maxlength</h2>
+  <!-- Limita a quantidade de caracteres -->
+  <input type="text" maxlength="10"><br><br>
+  <!-- Limita caracteres em área de texto -->
+  <textarea maxlength="200"></textarea><br><br>
+
+  <h2>pattern</h2>
+  <!-- Validação com expressão regular (somente letras, mínimo 3 caracteres) -->
+  <input type="text" pattern="[A-Za-z]{3,}" title="Apenas letras, mínimo 3 caracteres"><br><br>
+  <!-- Validação de telefone com formato específico -->
+  <input type="tel" pattern="\d{2}-\d{5}-\d{4}" placeholder="Formato: 99-99999-9999"><br><br>
+
+  <h2>multiple</h2>
+  <!-- Permite seleção de múltiplos arquivos -->
+  <input type="file" multiple><br><br>
+  <!-- Permite múltiplas imagens -->
+  <input type="file" accept="image/*" multiple><br><br>
+
+  <h1>Atributos Globais</h1>
+  <h2>id</h2>
+  <!-- Identificador único do elemento -->
+  <div id="menu-principal">Menu</div><br><br>
+  <section id="rodape">Rodapé do site</section><br><br>
+
+  <h2>class</h2>
+  <!-- Aplica classes CSS ao parágrafo -->
+  <p class="texto destaque">Bem-vindo!</p><br><br>
+  <!-- Aplica classes CSS ao botão -->
+  <button class="btn azul">Clique aqui</button><br><br>
+
+  <h2>style</h2>
+  <!-- Estilo CSS direto no parágrafo -->
+  <p style="color: blue; font-size: 18px;">Texto azul</p><br><br>
+  <!-- Estilo CSS direto na div -->
+  <div style="background-color: lightgray; padding: 10px;">Caixa destacada</div><br><br>
+</body>
+</html>
